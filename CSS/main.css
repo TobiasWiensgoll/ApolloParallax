@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 900vh;
+  height: 800vh;
 }
 .ContentContainer {
   position: fixed;
@@ -23,7 +23,7 @@ body {
   background-size: cover;
 }
 
-.rocketContainer {
+.RocketContainer {
   position: fixed;
   top: 0;
   justify-content: center;
@@ -33,8 +33,50 @@ body {
   height: 100vh;
 }
 
-.parallaxContainer {
+.ParallaxContainer {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.mountain,
+.baloon,
+.clouds-1,
+.clouds-2,
+.airplane,
+.ShootingStar,
+.satellite,
+.meteor,
+.moon {
+  position: absolute;
+}
+
+.rocket {
+  width: 100%;
+  height: auto;
+}
+
+.background-8 {
+  background-image: url(/Images/background/Background_02.jpg);
+}
+.background-7 {
+  background-image: url(/Images/background/Background_03.jpg);
+}
+.background-6 {
+  background-image: url(/Images/background/Background_04.jpg);
+}
+.background-5 {
+  background-image: url(/Images/background/Background_05.jpg);
+}
+.background-4 {
+  background-image: url(/Images/background/Background_06.jpg);
+}
+.background-3 {
+  background-image: url(/Images/background/Background_07.jpg);
+}
+.background-2 {
+  background-image: url(/Images/background/Background_08.jpg);
+}
+.background-1 {
+  background-image: url(/Images/background/Background_09.jpg);
 }
