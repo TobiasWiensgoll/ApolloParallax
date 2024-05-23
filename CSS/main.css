@@ -55,6 +55,46 @@ body {
   width: 100%;
   height: auto;
 }
+.moon {
+  width: 100%;
+  height: auto;
+}
+
+.clouds-1 {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.baloon {
+  margin-left: 50vh;
+}
+
+.clouds-2 {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  top: 45vh;
+}
+
+.airplane {
+  top: 50vh;
+  margin-left: -50px;
+  width: 90%;
+  height: auto;
+}
+
+.ShootingStar {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: screen;
+}
+.satellite {
+  width: 100%;
+  height: auto;
+  margin-left: 25vh;
+  top: 25vh;
+}
 
 .background-8 {
   background-image: url(/Images/background/Background_02.jpg);
