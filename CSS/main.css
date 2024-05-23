@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 800vh;
+  height: 825vh;
 }
 .ContentContainer {
   position: fixed;
@@ -85,17 +85,29 @@ body {
 }
 
 .ShootingStar {
-  width: 100%;
+  width: 25%;
   height: auto;
   mix-blend-mode: screen;
+  margin-left: 120vh;
+  top: 50vh;
+}
+.meteor {
+  width: 25%;
+  height: auto;
+  mix-blend-mode: screen;
+  transform: scaleX(-1);
+  top: 50vh;
 }
 .satellite {
-  width: 100%;
+  width: 80%;
   height: auto;
   margin-left: 25vh;
   top: 25vh;
 }
 
+.background-9 {
+  background-image: url(/Images/background/Background_01.png);
+}
 .background-8 {
   background-image: url(/Images/background/Background_02.jpg);
 }
