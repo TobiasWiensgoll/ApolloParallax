@@ -17,15 +17,19 @@ function simpleParallaxHorizontal(intensity, element) {
     element.css("transform", "translateX(" + imgPos + ")");
   });
 }
+function simpleParallaxSidewards(intensityX, intensityY, element) {
+  $(window).on("scroll", function () {
+    var scrollTop = $(window).scrollTop();
+    var imgPosX = scrollTop / intensityX + "px";
+    var imgPosY = scrollTop / intensityY + "px";
+    element.css("transform", "translate(" + imgPosX + ", " + imgPosY + ")");
+  });
+}
 
 $(document).ready(function () {
   simpleParallax(4, $(".baloon"));
-});
-
-$(document).ready(function () {
+  simpleParallax(2, $(".airplane"));
+  simpleParallaxHorizontal(4, $(".airplane"));
   simpleParallax(2, $(".mountain"));
-});
-
-$(document).ready(function () {
-  simpleParallax(-8, $(".clouds-2"));
+  simpleParallaxSidewards(-2, 4, $(".ShootingStar"));
 });
