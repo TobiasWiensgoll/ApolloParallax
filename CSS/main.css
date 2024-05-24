@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 825vh;
+}
+.ContentContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.RocketContainer {
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.ParallaxContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.moonContainer {
+  overflow: visible;
+}
+
+.mountain,
+.baloon,
+.clouds-1,
+.clouds-2,
+.airplane,
+.ShootingStar,
+.satellite,
+.meteor,
+.moon {
+  position: absolute;
+}
+
+.rocket {
+  width: 100%;
+  height: auto;
+}
+.moon {
+  width: 100%;
+  height: auto;
+}
+
+.clouds-1 {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.baloon {
+  margin-left: 50vh;
+  top: -35vh;
+}
+
+.clouds-2 {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  top: 35vh;
+}
+
+.airplane {
+  top: 50vh;
+  margin-left: -450px;
+  width: 90%;
+  height: auto;
+}
+
+.ShootingStar {
+  width: 15%;
+  height: auto;
+  mix-blend-mode: screen;
+  margin-left: 220vh;
+  top: -50vh;
+}
+.meteor {
+  width: 25%;
+  height: auto;
+  mix-blend-mode: screen;
+  top: -200vh;
+  margin-left: -200vh;
+}
+.satellite {
+  width: 80%;
+  height: auto;
+  margin-left: -55vh;
+  top: -70vh;
+}
+
+.background-9 {
+  background-image: url(/Images/background/Background_01.jpg);
+}
+.background-8 {
+  background-image: url(/Images/background/Background_02.jpg);
+}
+.background-7 {
+  background-image: url(/Images/background/Background_03.jpg);
+}
+.background-6 {
+  background-image: url(/Images/background/Background_04.jpg);
+}
+.background-5 {
+  background-image: url(/Images/background/Background_05.jpg);
+}
+.background-4 {
+  background-image: url(/Images/background/Background_06.jpg);
+}
+.background-3 {
+  background-image: url(/Images/background/Background_07.jpg);
+}
+.background-2 {
+  background-image: url(/Images/background/Background_08.jpg);
+}
+.background-1 {
+  background-image: url(/Images/background/Background_09.jpg);
+}
