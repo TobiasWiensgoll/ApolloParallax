@@ -32,4 +32,6 @@ $(document).ready(function () {
   simpleParallaxHorizontal(4, $(".airplane"));
   simpleParallax(2, $(".mountain"));
   simpleParallaxSidewards(-2, 4, $(".ShootingStar"));
+  simpleParallaxSidewards(4, 4, $(".satellite"));
+  simpleParallaxSidewards(2, 2, $(".meteor"));
 });

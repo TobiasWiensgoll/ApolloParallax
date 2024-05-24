@@ -37,6 +37,10 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+.moonContainer {
+  overflow: visible;
 }
 
 .mountain,
@@ -68,45 +72,46 @@ body {
 
 .baloon {
   margin-left: 50vh;
+  top: -35vh;
 }
 
 .clouds-2 {
   margin: auto;
   width: 100%;
   height: auto;
-  top: 45vh;
+  top: 35vh;
 }
 
 .airplane {
   top: 50vh;
-  margin-left: -50px;
+  margin-left: -450px;
   width: 90%;
   height: auto;
 }
 
 .ShootingStar {
-  width: 25%;
+  width: 15%;
   height: auto;
   mix-blend-mode: screen;
-  margin-left: 120vh;
-  top: 50vh;
+  margin-left: 220vh;
+  top: -50vh;
 }
 .meteor {
   width: 25%;
   height: auto;
   mix-blend-mode: screen;
-  transform: scaleX(-1);
-  top: 50vh;
+  top: -200vh;
+  margin-left: -200vh;
 }
 .satellite {
   width: 80%;
   height: auto;
-  margin-left: 25vh;
-  top: 25vh;
+  margin-left: -55vh;
+  top: -70vh;
 }
 
 .background-9 {
-  background-image: url(/Images/background/Background_01.png);
+  background-image: url(/Images/background/Background_01.jpg);
 }
 .background-8 {
   background-image: url(/Images/background/Background_02.jpg);
