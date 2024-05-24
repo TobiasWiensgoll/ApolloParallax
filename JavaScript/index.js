@@ -17,3 +17,15 @@ function simpleParallaxHorizontal(intensity, element) {
     element.css("transform", "translateX(" + imgPos + ")");
   });
 }
+
+$(document).ready(function () {
+  simpleParallax(4, $(".baloon"));
+});
+
+$(document).ready(function () {
+  simpleParallax(2, $(".mountain"));
+});
+
+$(document).ready(function () {
+  simpleParallax(-8, $(".clouds-2"));
+});
