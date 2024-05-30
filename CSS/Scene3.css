@@ -44,7 +44,7 @@
 .l1 img {
   height: 400px;
   margin: 0 -200px;
-  z-index: 99;
+  z-index: 100;
 }
 .l2 img {
   height: 400px;
@@ -59,7 +59,7 @@
 .Alien {
   position: absolute;
   top: 50vh;
-  margin: 0 80vh;
+  margin: 0 130vh;
 }
 
 .rocket2 {
