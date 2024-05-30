@@ -12,7 +12,7 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
 }
 
 .background {
@@ -117,15 +117,33 @@ body {
   top: -70vh;
 }
 
-.background-9 { background-image: url(/Images/background/Background_01.jpg); }
-.background-8 { background-image: url(/Images/background/Background_02.jpg); }
-.background-7 { background-image: url(/Images/background/Background_03.jpg); }
-.background-6 { background-image: url(/Images/background/Background_04.jpg); }
-.background-5 { background-image: url(/Images/background/Background_05.jpg); }
-.background-4 { background-image: url(/Images/background/Background_06.jpg); }
-.background-3 { background-image: url(/Images/background/Background_07.jpg); }
-.background-2 { background-image: url(/Images/background/Background_08.jpg); }
-.background-1 { background-image: url(/Images/background/Background_09.jpg); }
+.background-9 {
+  background-image: url(/Images/background/Background_01.jpg);
+}
+.background-8 {
+  background-image: url(/Images/background/Background_02.jpg);
+}
+.background-7 {
+  background-image: url(/Images/background/Background_03.jpg);
+}
+.background-6 {
+  background-image: url(/Images/background/Background_04.jpg);
+}
+.background-5 {
+  background-image: url(/Images/background/Background_05.jpg);
+}
+.background-4 {
+  background-image: url(/Images/background/Background_06.jpg);
+}
+.background-3 {
+  background-image: url(/Images/background/Background_07.jpg);
+}
+.background-2 {
+  background-image: url(/Images/background/Background_08.jpg);
+}
+.background-1 {
+  background-image: url(/Images/background/Background_09.jpg);
+}
 
 .volume-control {
   position: fixed;
