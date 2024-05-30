@@ -3,9 +3,10 @@
 }
 
 body {
+  width: 100vw;
   margin: 0;
   padding: 0;
-  height: 825vh; /* Stellt sicher, dass der Inhalt gescrollt werden kann */
+  height: 800vh; /* Stellt sicher, dass der Inhalt gescrollt werden kann */
 }
 
 .ContentContainer {
@@ -45,6 +46,7 @@ body {
 
 .moonContainer {
   overflow: visible;
+  top: 30vh;
 }
 
 .mountain,
@@ -62,6 +64,7 @@ body {
 .rocket {
   width: 100%;
   height: auto;
+  z-index: 99;
 }
 
 .moon {
