@@ -15,6 +15,7 @@
     ></audio>
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/Scene3.css" />
+    <link rel="stylesheet" href="CSS/navbar.css" />
     <title>ApolloMission</title>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -23,6 +24,21 @@
     ></script>
   </head>
   <body>
+    <div class="fixed">
+      <header>
+        <img src="Bilder/logo1.png" alt="Logo" />
+        <h1><a id="anfang">MondMission: Apollo 11</a></h1>
+
+        <nav>
+          <ul class="nav">
+            <li><a href="main.html">Szene1</a></li>
+            <li><a href="#angebote">Szene2</a></li>
+            <li><a href="#aboutus">Szene3</a></li>
+            <li><a href="form.html">About Us</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main class="ContentContainer">
       <section class="background background-8">
         <div class="ParallaxContainer moonContainer">
@@ -133,5 +149,6 @@
     <script src="JavaScript/HorizontalParallax.js"></script>
     <script src="/JavaScript/transition.js"></script>
     <script src="/JavaScript/flamme.js"></script>
+    <script src="/JavaScript/navbar.js"></script>
   </body>
 </html>
