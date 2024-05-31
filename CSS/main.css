@@ -119,6 +119,13 @@ body {
   margin-left: -55vh;
   top: -70vh;
 }
+.Flame {
+  top: 60vh;
+  margin-left: -10px;
+  position: absolute;
+  width: 14%;
+  height: auto;
+}
 
 .background-9 {
   background-image: url(/Images/background/Background_01.jpg);
