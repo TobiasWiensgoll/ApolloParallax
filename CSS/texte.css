@@ -1,0 +1,17 @@
+div.text-container2 {
+    position:absolute;
+    display:flex;
+    font-size: 2vw;
+    font-family:fantasy;
+    top: 50vh;
+    left: 100vw;
+    transform: translate(-130%, 650%);
+    color: white;
+    text-align: left;
+    padding: 100px;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+  }
