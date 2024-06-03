@@ -22,7 +22,7 @@ $(document).ready(function () {
         $body.removeClass("scroll-down").addClass("scroll-up");
       }
     } else {
-      $body.removeClass("scroll-down").removeClassClass("scroll-up");
+      $body.removeClass("scroll-down").removeClass("scroll-up");
     }
 
     lastScroll = currentscroll;
