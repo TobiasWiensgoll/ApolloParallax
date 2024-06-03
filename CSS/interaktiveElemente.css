@@ -61,7 +61,7 @@
     width: 20px;
     height: 2px;
     background-color: black;
-    margin-right: 15px; /* Abstand zwischen Linie und div */
+    margin-right: 1px; /* Abstand zwischen Linie und div */
 }
 .timer {
     z-index: 10000;
