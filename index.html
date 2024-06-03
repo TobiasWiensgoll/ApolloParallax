@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="CSS/texte.css"/>
     <link rel="stylesheet" href="CSS/texte.css"/>
     <link rel="stylesheet" href="CSS/sound.css"/>
+    <link rel="stylesheet" href="CSS/interaktiveElemente.css"/>
     <title>ApolloMission</title>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -28,6 +29,39 @@
     <link rel="icon" type="image/png" href="/Images/mondIcon.png" />
   </head>
   <body>
+    <div class="loading-container">
+      <div class="loadContainer">
+          <div class="section"></div>
+          <div class="section"></div>
+          <div class="section"></div>
+          <div class="section"></div>
+          <div class="section"></div>
+          <div class="section"></div>
+          <div class="filler"></div>
+          <img src="Images/kleineRakete.png" alt="Beispielbild" class="scrolling-image" >
+      </div>
+      <div class="externals-container">
+          <div class="external">
+              <span>bild 1</span>
+          </div>
+          <div class="external">
+              <span>bild 2</span>
+          </div>
+          <div class="external">
+              <span>bild 3</span>
+          </div>
+          <div class="external">
+              <span>bild 4</span>
+          </div>
+          <div class="external">
+              <span> bild 5 </span>
+          </div>
+          <div class="external">
+              <span>bild 6</span>
+          </div>
+      </div>
+  </div>
+  <div class="timer">00:00</div>
     <div class="fixed">
       <header>
         <img src="/Images/mondIcon.png" alt="Logo" />
@@ -155,5 +189,6 @@
     <script src="/JavaScript/flamme.js"></script>
     <script src="/JavaScript/navbar.js"></script>
     <script src="/JavaScript/sound.js"></script>
+    <script src="JavaScript/interaktiveElemente.js"></script>
   </body>
 </html>

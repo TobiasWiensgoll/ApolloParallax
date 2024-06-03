@@ -1,0 +1,84 @@
+.loading-container {
+    position: fixed;
+    display: flex;
+    align-items: center; /* Vertikal zentrieren */
+    left: 20px; /* Positioniert das Rechteck an der linken Seite */
+    top: 50px;
+    z-index: 10000;
+}
+.loadContainer {
+    display: flex;
+    flex-direction: column;
+    height: 80vh; /* Höhe des Balkens */
+    width: 40px; /* Breite des Balkens */
+    border: 3px solid black;
+    border-radius: 20px; /* Abrundung der Ecken */
+    overflow: hidden; /* Inhalt abgeschnitten, damit die abgerundeten Ecken korrekt angezeigt werden */
+    position: relative;
+    background-color: #e1f982; /* Anfangsfarbe des Balkens */
+    transition: background-color 0.1s; /* Übergangszeit für die Hintergrundfarbe */
+}
+.section {
+    flex: 1; /* Gleichmäßig verteilen */
+    position: relative;
+}
+.scrolling-image {
+    position: absolute;
+    width: 50px; /* Breite des Bildes */
+    height: 60px; /* Höhe des Bildes */
+    left: 56%; /* Zentriert horizontal */
+    transform: translateX(-56%) translateY(0); /* Korrigiert die Zentrierung */
+    bottom: 0; /* Ausgangsposition unten */
+}
+.filler {
+    position: absolute;
+    bottom: 0; /* Positioniert am unteren Rand des Containers */
+    left: 0;
+    width: 100%;
+    height: 0; /* Initial keine Höhe */
+    background-color: red;
+}
+.externals-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh; /* Höhe des Balkens */
+    margin-left: 0px; /* Abstand zum Balken */
+}
+
+.external {
+    display: flex;
+    align-items: center;
+    height: calc(80vh / 6); /* Höhe jedes externen divs */
+}
+
+.external span {
+    width: 100px; /* Breite des Spans */
+}
+.external::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-right: 15px; /* Abstand zwischen Linie und div */
+}
+.timer {
+    z-index: 10000;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: black;
+    color: lime;
+    padding: 10px 20px;
+    border: 2px solid lime;
+    border-radius: 5px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    text-shadow: 0 0 5px lime;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
