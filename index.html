@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/Scene3.css" />
     <link rel="stylesheet" href="CSS/navbar.css" />
-    <link rel="stylesheet" href="CSS/texte.css"/>
-    <link rel="stylesheet" href="CSS/texte.css"/>
-    <link rel="stylesheet" href="CSS/sound.css"/>
-    <link rel="stylesheet" href="CSS/interaktiveElemente.css"/>
+    <link rel="stylesheet" href="CSS/texte.css" />
+    <link rel="stylesheet" href="CSS/texte.css" />
+    <link rel="stylesheet" href="CSS/sound.css" />
+    <link rel="stylesheet" href="CSS/interaktiveElemente.css" />
     <title>ApolloMission</title>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -31,37 +31,57 @@
   <body>
     <div class="loading-container">
       <div class="loadContainer">
-          <div class="section"></div>
-          <div class="section"></div>
-          <div class="section"></div>
-          <div class="section"></div>
-          <div class="section"></div>
-          <div class="section"></div>
-          <div class="filler"></div>
-          <img src="Images/kleineRakete.png" alt="Beispielbild" class="scrolling-image" >
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="filler"></div>
+        <img
+          src="Images/kleineRakete.png"
+          alt="Beispielbild"
+          class="scrolling-image"
+        />
       </div>
       <div class="externals-container">
-          <div class="external">
-              <span><img src="Images/kleinerMond.png" width="50" height="54"></span>
-          </div>
-          <div class="external">
-              <span><img src="Images/kleinerSatellit.png" width="50" height="54"></span>
-          </div>
-          <div class="external">
-              <span> <img src="Images/kleinePolarlichter.png" width="50" height="54"></span>
-          </div>
-          <div class="external">
-              <span><img src="Images/kleineFlamme.png" width="50" height="54"></span>
-          </div>
-          <div class="external">
-              <span> <img src="Images/kleinerHeissluftballoon.png" width="50" height="54"> </span>
-          </div>
-          <div class="external">
-              <span> <img src="Images/kleineErde.png" width="50" height="54"></span>
-          </div>
+        <div class="external">
+          <span
+            ><img src="Images/kleinerMond.png" width="50" height="54"
+          /></span>
+        </div>
+        <div class="external">
+          <span
+            ><img src="Images/kleinerSatellit.png" width="50" height="54"
+          /></span>
+        </div>
+        <div class="external">
+          <span>
+            <img src="Images/kleinePolarlichter.png" width="50" height="54"
+          /></span>
+        </div>
+        <div class="external">
+          <span
+            ><img src="Images/kleineFlamme.png" width="50" height="54"
+          /></span>
+        </div>
+        <div class="external">
+          <span>
+            <img
+              src="Images/kleinerHeissluftballoon.png"
+              width="50"
+              height="54"
+            />
+          </span>
+        </div>
+        <div class="external">
+          <span>
+            <img src="Images/kleineErde.png" width="50" height="54"
+          /></span>
+        </div>
       </div>
-  </div>
-  <div class="timer">00:00</div>
+    </div>
+    <div class="timer">00:00</div>
     <div class="fixed">
       <header>
         <img src="/Images/mondIcon.png" alt="Logo" />
@@ -84,7 +104,12 @@
         </div>
         <div class="text-container2">
           <p>
-            Die Saturn V-Rakete, mit einer Höhe von 110,6 Metern und einem Gewicht von 2.800 Tonnen, erzeugte einen Schub von 34,5 Millionen Newton und eine Leistung von 160 Millionen PS. Mit einer Höchstgeschwindigkeit von bis zu 39.897 km/h und einem Verbrauch von 13 Tonnen Kerosin pro Sekunde war sie ein Meisterwerk der Raumfahrttechnik.
+            Die Saturn V-Rakete, mit einer Höhe von 110,6 Metern und einem
+            Gewicht von 2.800 Tonnen, erzeugte einen Schub von 34,5 Millionen
+            Newton und eine Leistung von 160 Millionen PS. Mit einer
+            Höchstgeschwindigkeit von bis zu 39.897 km/h und einem Verbrauch von
+            13 Tonnen Kerosin pro Sekunde war sie ein Meisterwerk der
+            Raumfahrttechnik.
           </p>
         </div>
       </section>
@@ -136,6 +161,9 @@
       </section>
       <section class="background background-1">
         <div class="RocketContainer">
+          <div class="WarningScreen">
+            <div class="warning">Bitte in Vollbild öffnen(F11)</div>
+          </div>
           <img class="Flame flameStart hidden" src="/Images/Flamme_Start.gif" />
 
           <img class="Flame nurFlamme hidden" src="/Images/NurFlamme.gif" />
@@ -178,7 +206,10 @@
     </div>
 
     <div class="sound-control">
-      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
       <label for="soundToggle">Sound</label>
       <input type="checkbox" id="soundToggle" />
     </div>

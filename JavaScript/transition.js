@@ -13,10 +13,12 @@ $(document).ready(function () {
       $newBackground.hide();
       $(".rocket").removeClass("fadeOut");
       $(".rocket").show();
+      $(".Flame").show();
     } else {
       // Wenn das Ende des ContentContainers erreicht ist
       $contentContainer.css("bottom", (contentHeight - windowHeight) * -1);
       $(".rocket").addClass("fadeOut");
+      $(".Flame").hide();
 
       // Neue Scroll-Effekt-Logik für den newBackground
       $newBackground.show(); // Start animation
