@@ -3,7 +3,7 @@
     display: flex;
     align-items: center; /* Vertikal zentrieren */
     left: 20px; /* Positioniert das Rechteck an der linken Seite */
-    top: 50px;
+    top: 70px;
     z-index: 10000;
 }
 .loadContainer {
@@ -90,11 +90,10 @@
     width: 100vw;
     display: flex;
     align-items: flex-end;
-    justify-content: left;
+    justify-content: center;
 }
 .full-screenImage{
     margin-bottom: 5px;
-    margin-left: 15px;
     cursor: pointer;
 
 }
