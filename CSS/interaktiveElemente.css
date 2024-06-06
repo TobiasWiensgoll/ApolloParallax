@@ -71,7 +71,7 @@
     background-color: black;
     color: lime;
     padding: 10px 20px;
-    border: 2px solid black;
+    border: 2px solid lime;
     border-radius: 5px;
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
@@ -81,20 +81,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.full-screen{
-    z-index: 1000;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: flex-end;
-    justify-content: left;
-}
-.full-screenImage{
-    margin-bottom: 5px;
-    margin-left: 15px;
-    cursor: pointer;
-
 }

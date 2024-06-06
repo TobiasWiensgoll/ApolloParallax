@@ -21,21 +21,3 @@ window.addEventListener('scroll', function() {
     var formattedTime = ('0' + hours).slice(-2) + ':' + ('0' + minutes).slice(-2);
     timerElement.textContent = formattedTime;
 });
-
-//Full-Screen Button
-document.addEventListener("DOMContentLoaded", function() {
-    var img = document.querySelector('.full-screenImage');
-
-    img.addEventListener("click", function() {
-        var docElm = document.documentElement;
-        if (docElm.requestFullscreen) {
-            docElm.requestFullscreen();
-        } else if (docElm.mozRequestFullScreen) { // Firefox
-            docElm.mozRequestFullScreen();
-        } else if (docElm.webkitRequestFullscreen) { // Chrome, Safari and Opera
-            docElm.webkitRequestFullscreen();
-        } else if (docElm.msRequestFullscreen) { // IE/Edge
-            docElm.msRequestFullscreen();
-        }
-    });
-});
