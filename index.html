@@ -3,21 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <audio
+      id="audioLiftOff"
+      src="Sound/apollo11_lift_off_final.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="audioMission"
+      src="Sound/Lunar_Descent_-_From_the_soundtrack_to__NASA_Explorers_Apollo_.mp3"
+      preload="auto"
+    ></audio>
     <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/Scene3.css" />
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <link rel="stylesheet" href="CSS/box.css" />
+    <link rel="stylesheet" href="CSS/sound.css" />
+    <link rel="stylesheet" href="CSS/interaktiveElemente.css" />
     <title>ApolloMission</title>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" type="image/png" href="/Images/mondIcon.png" />
   </head>
   <body>
-    <main class="ContentContainer">
-      <section class="background background-9">
-        <div class="ParallaxContainer">
-          <img />
+    <div class="loading-container">
+      <div class="loadContainer">
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="filler"></div>
+        <img
+          src="Images/kleineRakete.png"
+          alt="Beispielbild"
+          class="scrolling-image"
+        />
+      </div>
+      <div class="externals-container">
+        <div class="external">
+          <span
+            ><img src="Images/kleinerMond.png" width="50" height="54"
+          /></span>
         </div>
-      </section>
+        <div class="external">
+          <span
+            ><img src="Images/kleinerSatellit.png" width="50" height="54"
+          /></span>
+        </div>
+        <div class="external">
+          <span>
+            <img src="Images/kleinePolarlichter.png" width="50" height="54"
+          /></span>
+        </div>
+        <div class="external">
+          <span
+            ><img src="Images/kleineFlamme.png" width="50" height="54"
+          /></span>
+        </div>
+        <div class="external">
+          <span>
+            <img
+              src="Images/kleinerHeissluftballoon.png"
+              width="50"
+              height="54"
+            />
+          </span>
+        </div>
+        <div class="external">
+          <span>
+            <img src="Images/kleineErde.png" width="50" height="54"
+          /></span>
+        </div>
+      </div>
+    </div>
+    <div class="timer">00:00</div>
+    <div class="fixed">
+      <header>
+        <img src="/Images/mondIcon.png" alt="Logo" />
+        <h1><a id="anfang">MondMission: Apollo 11</a></h1>
+
+        <nav>
+          <ul class="nav">
+            <li><a href="main.html">Szene1</a></li>
+            <li><a href="#angebote">Szene2</a></li>
+            <li><a href="#aboutus">Szene3</a></li>
+            <li><a href="form.html">About Us</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main class="ContentContainer">
       <section class="background background-8">
         <div class="ParallaxContainer moonContainer">
           <img class="moon" src="/Images/Mond png.png" />
@@ -42,6 +121,9 @@
       </section>
       <section class="background background-5">
         <div class="ParallaxContainer">
+          <div class="speech-bubble satelit round r float">
+            Mehr als 7500 Sateliten kreisen heutzutage um die Erde.
+          </div>
           <img class="satellite" src="/Images/Satellit.png" />
         </div>
       </section>
@@ -71,13 +153,73 @@
       </section>
       <section class="background background-1">
         <div class="RocketContainer">
+          <div class="WarningScreen">
+            <div class="warning">Bitte in Vollbild öffnen(F11)</div>
+          </div>
+          <img class="Flame flameStart hidden" src="/Images/Flamme_Start.gif" />
+
+          <img class="Flame nurFlamme hidden" src="/Images/NurFlamme.gif" />
           <img class="rocket" src="/Images/Rakete.png" />
         </div>
         <div class="ParallaxContainer">
+          <div class="speech-bubble round first r float">
+            Die Saturn V-Rakete, mit einer Höhe von 110,6 Metern und einem
+            Gewicht von 2.800 Tonnen, erzeugte einen Schub von 34,5 Millionen
+            Newton und eine Leistung von 160 Millionen PS. Mit einer
+            Höchstgeschwindigkeit von bis zu 39.897 km/h und einem Verbrauch von
+            13 Tonnen Kerosin pro Sekunde war sie ein Meisterwerk der
+            Raumfahrttechnik.
+          </div>
           <img class="mountain" src="/Images/mountains.png" />
         </div>
       </section>
     </main>
+    <div class="Scene3">
+      <div class="container">
+        <div class="wrapper">
+          <div class="slide">
+            <div class="layer rocket2">
+              <img src="/Images/Rakete.png" />
+            </div>
+            <div class="layer l1">
+              <img src="/Images/Astronaut1.png" />
+              <img src="/Images/Astronaut2.png" />
+              <img src="/Images/Astronaut3.png" />
+            </div>
+            <div class="layer moonLeft">
+              <img src="/Images/Mond png.png" />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="layer l2">
+              <img class="Alien animate-on-scroll" src="/Images/Alien.png" />
+            </div>
+            <div class="layer l2">
+              <img class="Flagge" src="/Images/Flagge.png" />
+            </div>
+            <div class="layer moonRight">
+              <img src="/Images/Mond png.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sound-control">
+      <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+      <label for="soundToggle">Sound</label>
+      <input type="checkbox" id="soundToggle" />
+    </div>
+
     <script src="JavaScript/index.js"></script>
+    <script src="JavaScript/HorizontalParallax.js"></script>
+    <script src="/JavaScript/transition.js"></script>
+    <script src="/JavaScript/flamme.js"></script>
+    <script src="/JavaScript/navbar.js"></script>
+    <script src="/JavaScript/sound.js"></script>
+    <script src="JavaScript/interaktiveElemente.js"></script>
   </body>
 </html>

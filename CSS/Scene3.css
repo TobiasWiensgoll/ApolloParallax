@@ -1,0 +1,146 @@
+.slide {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.slide:nth-child(2) {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  width: 200vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+.container {
+  height: 100vw;
+  width: 100vh;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-position: bottom;
+  background-size: cover;
+  transition: left 0.3s ease-out, filter 0.3s ease-out;
+}
+.l1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 50px;
+  /* z-index: 99; */
+  background-repeat: no-repeat;
+}
+.l1 img {
+  height: 40%;
+  margin: 0 -200px;
+  z-index: 100;
+}
+.l2 img {
+  height: 400px;
+  z-index: 99;
+  overflow: hidden;
+}
+.Flagge {
+  position: absolute;
+  top: 50vh;
+  margin: 0 0;
+}
+.Alien {
+  position: absolute;
+  top: 50vh;
+  margin: 0 130vh;
+}
+
+.rocket2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto;
+  z-index: 99;
+}
+.rocket2 img {
+  width: 100%;
+  height: auto;
+}
+
+.moonLeft {
+  position: absolute;
+  top: 30vh;
+}
+.moonLeft img {
+  width: 100%;
+  height: auto;
+}
+
+.moonRight {
+  top: 30vh;
+  position: absolute;
+}
+.moonRight img {
+  transform: scaleX(-1);
+  width: 100%;
+  height: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+.Scene3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none; /* Standardmäßig verstecken */
+  animation: fadeIn 0.6s forwards;
+}
+.fadeOut {
+  animation: fadeOut 1s forwards;
+}
+/* Keyframe Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.hidden {
+  display: none;
+}

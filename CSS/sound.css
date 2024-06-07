@@ -1,0 +1,30 @@
+.sound-control {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund für den Weltall-Look */
+    border: 1px solid #5d5d5d; /* Leicht hervorgehobener Rand */
+    padding: 15px 20px; /* Mehr Innenabstand */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Weichere Schatten */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-family: 'Orbitron', sans-serif; /* Futuristische Schriftart */
+    color: #ccc; /* Helles Grau für den Text */
+    font-size: 16px; /* Größere Schrift */
+  }
+  
+  .sound-control label {
+    margin-right: 10px; /* Abstand zwischen Label und Checkbox */
+  }
+  
+  .sound-control input[type="checkbox"] {
+    width: 25px; /* Größere Checkbox */
+    height: 25px; /* Größere Checkbox */
+    cursor: pointer;
+    accent-color: #007bff; /* Personalisierte Farbe für die Checkbox */
+  }
+  
+  

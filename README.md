@@ -16,7 +16,10 @@ Bei Meilensteine Merged Tobias die Branches in Main
 
 ## Roadmap
 
-Hier werden Arbeitspakete stehen
+--SZENE 1
+--Texte
+--Interaktive Elemente
+--Sound Buttons
 
 ## Authors and acknowledgment
 
