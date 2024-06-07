@@ -5,6 +5,7 @@ $(document).ready(function () {
     simpleParallax(2, $(".mountain"));
     simpleParallaxSidewards(-2, 4, $(".ShootingStar"));
     simpleParallaxSidewards(4, 4, $(".satellite"));
+    simpleParallaxSidewards(4, 4, $(".satelit"));
     simpleParallaxSidewards(2, 2, $(".meteor"));
   
     var audioLiftOff = document.getElementById("audioLiftOff");
