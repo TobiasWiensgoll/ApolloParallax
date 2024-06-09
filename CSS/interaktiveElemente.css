@@ -3,7 +3,7 @@
     display: flex;
     align-items: center; /* Vertikal zentrieren */
     left: 20px; /* Positioniert das Rechteck an der linken Seite */
-    top: 50px;
+    top: 70px;
     z-index: 10000;
 }
 .loadContainer {
@@ -71,7 +71,7 @@
     background-color: black;
     color: lime;
     padding: 10px 20px;
-    border: 2px solid lime;
+    border: 2px solid black;
     border-radius: 5px;
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
@@ -81,4 +81,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.vollbild-container{
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    margin-top: 60px;
+}
+
+.vollbildButton{
+    margin-right: 10px;
+    cursor: pointer;
 }
