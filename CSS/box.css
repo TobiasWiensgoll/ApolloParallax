@@ -62,14 +62,27 @@
 
 .speech-bubble.float {
   animation-name: float-up;
-  animation-duration: 2s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.speech-bubble.float2 {
+  animation-name: float-down;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
 }
 
 @keyframes float-up {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+  50% { transform: translateY(-25px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes float-down {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(25px); }
   100% { transform: translateY(0); }
 }
 
@@ -121,4 +134,14 @@
 .speech-bubble.meteor2 {
   left: 25vw;
   top: 70vh;
+}
+
+.speech-bubble.mondtext {
+  left: -10vw;
+  top: 100vh;
+}
+
+.speech-bubble.landung {
+left: 20vw;
+top: 20vw;
 }
