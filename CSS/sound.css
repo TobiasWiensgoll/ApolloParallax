@@ -2,10 +2,10 @@
   position: fixed;
   top: 60px; /* geändert von 'bottom' zu 'top' */
   right: 70px; /* geändert von 'left' zu 'right' */
-  /* restliche Stile bleiben gleich */
-  cursor: pointer; /* Zeigt einen Zeiger an, wenn man über das Element fährt */
+  cursor: pointer;
+  z-index: 1000; /* Stelle sicher, dass dies hoch genug ist */
 }
-
+ 
 .sound-control img {
   pointer-events: auto; /* Erlaubt Klick-Events auf das Bild */
 }
