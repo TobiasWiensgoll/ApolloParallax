@@ -13,66 +13,70 @@ $(document).ready(function () {
   var isSoundEnabled = false;
   var audioMissionStarted = false;
 
-  var speakerButton = $('.sound-control img');
+  var speakerButton = $(".sound-control img");
 
   speakerButton.click(function () {
-      if (speakerButton.attr('src').includes('Lautsprecher_aus')) {
-          speakerButton.attr('src', 'Images/Lautsprecher_an.png');
-          isSoundEnabled = true;
-          audioMissionStarted = false;
-      } else {
-          speakerButton.attr('src', 'Images/Lautsprecher_aus.png');
-          audioLiftOff.pause();
-          audioMission.pause();
-          isSoundEnabled = false;
-          audioMissionStarted = false;
-      }
+    if (speakerButton.attr("src").includes("Lautsprecher_aus")) {
+      speakerButton.attr("src", "Images/Lautsprecher_an.png");
+      isSoundEnabled = true;
+      audioMissionStarted = false;
+    } else {
+      speakerButton.attr("src", "Images/Lautsprecher_aus.png");
+      audioLiftOff.pause();
+      audioMission.pause();
+      isSoundEnabled = false;
+      audioMissionStarted = false;
+    }
   });
 
-  $(window).on("scroll", debounce(function () {
+  $(window).on(
+    "scroll",
+    debounce(function () {
       var scrollPos = $(window).scrollTop();
       if (isSoundEnabled) {
-          manageAudio(scrollPos);
+        manageAudio(scrollPos);
       }
-  }, 50));
+    }, 50)
+  );
 
   function manageAudio(scrollPos) {
-      if (scrollPos < 1500) {
-          setAudioPosition(audioLiftOff, scrollPos, 1500);
-          if (scrollPos >= 1500) {
-              audioLiftOff.pause(); // Pausiert den audioLiftOff bei 1000 Pixeln
-          }
-      } else {
-          if (!audioMissionStarted) {
-              audioMission.currentTime = 0;
-              audioMission.play();
-              audioMissionStarted = true;
-          }
-          audioLiftOff.pause(); // Sicherstellen, dass audioLiftOff pausiert ist, wenn audioMission spielt
+    if (scrollPos < 1500) {
+      setAudioPosition(audioLiftOff, scrollPos, 1500);
+      if (scrollPos >= 1500) {
+        audioLiftOff.pause(); // Pausiert den audioLiftOff bei 1000 Pixeln
       }
+    } else {
+      if (!audioMissionStarted) {
+        audioMission.currentTime = 0;
+        audioMission.play();
+        audioMissionStarted = true;
+      }
+      audioLiftOff.pause(); // Sicherstellen, dass audioLiftOff pausiert ist, wenn audioMission spielt
+    }
   }
 
   function setAudioPosition(audio, scrollPos, maxScroll) {
-      var duration = audio.duration;
-      var time = (scrollPos / maxScroll) * duration;
-      if (Math.abs(audio.currentTime - time) > 1) {
-          audio.currentTime = time;
-      }
-      if (audio.paused) {
-          audio.play();
-      }
+    var duration = audio.duration;
+    var time = (scrollPos / maxScroll) * duration;
+    if (Math.abs(audio.currentTime - time) > 1) {
+      audio.currentTime = time;
+    }
+    if (audio.paused) {
+      audio.play();
+    }
   }
 
   function debounce(func, wait, immediate) {
-      var timeout;
-      return function() {
-          var context = this, args = arguments;
-          clearTimeout(timeout);
-          timeout = setTimeout(function() {
-              timeout = null;
-              if (!immediate) func.apply(context, args);
-          }, wait);
-          if (immediate && !timeout) func.apply(context, args);
-      };
+    var timeout;
+    return function () {
+      var context = this,
+        args = arguments;
+      clearTimeout(timeout);
+      timeout = setTimeout(function () {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      }, wait);
+      if (immediate && !timeout) func.apply(context, args);
+    };
   }
 });
