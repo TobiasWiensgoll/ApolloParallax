@@ -144,8 +144,8 @@
 }
 
 .speech-bubble.meteor2 {
-  left: 25vw;
-  top: 70vh;
+  top: -155vh;
+  margin-left: -200vh;
 }
 
 .speech-bubble.mondtext {
