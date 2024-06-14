@@ -1,7 +1,7 @@
 .sound-control {
   position: fixed;
-  top: 60px; /* geändert von 'bottom' zu 'top' */
-  right: 70px; /* geändert von 'left' zu 'right' */
+  top: 120px; /* geändert von 'bottom' zu 'top' */
+  right: 10px; /* geändert von 'left' zu 'right' */
   cursor: pointer;
   z-index: 1000; /* Stelle sicher, dass dies hoch genug ist */
 }
