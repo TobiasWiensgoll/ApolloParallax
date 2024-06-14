@@ -16,16 +16,16 @@ body {
 
 .menu {
   overflow: hidden;
-  cursor: grab;
+  /* cursor: grab; */
   width: 100%;
   position: relative;
   z-index: 1;
   height: 25vh;
 }
 
-.menu.is-dragging {
+/* .menu.is-dragging {
   cursor: grabbing;
-}
+} */
 
 .menu--wrapper {
   counter-reset: count;
