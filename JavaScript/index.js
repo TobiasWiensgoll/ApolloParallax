@@ -36,4 +36,5 @@ $(document).ready(function () {
   simpleParallaxSidewards(4, 4, $(".satelit"));
   simpleParallaxSidewards(2, 2, $(".meteor"));
   simpleParallaxSidewards(2, 2, $(".meteor2"));
+  simpleParallaxHorizontal(4, $(".tropo"));
 });
