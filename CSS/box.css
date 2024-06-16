@@ -19,7 +19,7 @@
   position: relative;
   border-radius: var(--bubble-corners);
   max-width: var(--w);
-  box-shadow: 0 0 0 var(--border-size) var(--border-color);
+  box-shadow:25px 25px 15px rgba(0, 0, 0, 0.1), 0 0 0 var(--border-size) var(--border-color);
 }
 
 .speech-bubble:before,
@@ -121,12 +121,12 @@
 }
 
 .speech-bubble.tropo {
-  left: 62vw;
-  top: -55vh;
+  right: -40vw;
+  top: -45vh;
 }
 
 .speech-bubble.satelit {
-  margin-left: -40vw;
+  margin-left: -43vw;
   top: -50vh;
 }
 .speech-bubble.round {
@@ -134,13 +134,13 @@
 }
 
 .speech-bubble.strato {
-  left: 20vw;
-  top: -50vh;
+  left: 15vw;
+  top: -10vh;
 }
 
 .speech-bubble.meso {
   left: 70vw;
-  top: -150vh;
+  top: -105vh;
 }
 
 .speech-bubble.meteor2 {
@@ -150,10 +150,24 @@
 
 .speech-bubble.mondtext {
   left: -10vw;
-  top: 100vh;
+  top: -10vh;
 }
 
 .speech-bubble.landung {
   left: 20vw;
   top: 20vw;
 }
+
+.speech-bubble.zitat1 {
+  left: 58vw;
+  top: 32vh;
+  /*opacity: 0;*/
+}
+
+.speech-bubble.zitat1.show {
+  left: 58vw;
+  top: 32vh;
+  opacity: 1; 
+  transition: opacity 5s ease; 
+}
+
