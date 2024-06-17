@@ -19,7 +19,8 @@
   position: relative;
   border-radius: var(--bubble-corners);
   max-width: var(--w);
-  box-shadow:25px 25px 15px rgba(0, 0, 0, 0.1), 0 0 0 var(--border-size) var(--border-color);
+  box-shadow: 25px 25px 15px rgba(0, 0, 0, 0.1),
+    0 0 0 var(--border-size) var(--border-color);
 }
 
 .speech-bubble:before,
@@ -162,12 +163,13 @@
   left: 58vw;
   top: 32vh;
   /*opacity: 0;*/
+  position: absolute;
+  z-index: 999;
 }
 
 .speech-bubble.zitat1.show {
   left: 58vw;
   top: 32vh;
-  opacity: 1; 
-  transition: opacity 5s ease; 
+  opacity: 1;
+  transition: opacity 5s ease;
 }
-
