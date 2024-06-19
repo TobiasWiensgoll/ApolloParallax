@@ -11,8 +11,8 @@
 .speech-bubble {
   text-align: center;
   /* font-family: cursive; */
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 18px;
+  /*font-weight: bold; */
   color: var(--text-color);
   background: var(--bubble-color);
   padding: 1em;
