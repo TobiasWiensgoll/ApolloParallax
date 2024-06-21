@@ -2,7 +2,7 @@
   --arrow-w: 0.5em;
   --arrow-h: 1em;
   --bubble-corners: 0;
-  --w: 12em;
+  --w: 14em;
   --border-size: 3px;
   --text-color: black;
   --bubble-color: white;
@@ -63,14 +63,14 @@
 
 .speech-bubble.float {
   animation-name: float-up;
-  animation-duration: 3s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
 }
 
 .speech-bubble.float2 {
   animation-name: float-down;
-  animation-duration: 3s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
 }
@@ -80,7 +80,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-25px);
+    transform: translateY(-15px);
   }
   100% {
     transform: translateY(0);
@@ -92,7 +92,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(25px);
+    transform: translateY(15px);
   }
   100% {
     transform: translateY(0);
@@ -150,13 +150,20 @@
 }
 
 .speech-bubble.mondtext {
-  left: -10vw;
+  right: 20vw;
+  top: -10vh;
+
+}
+
+.speech-bubble.mondtext2 {
+  left: -55vw;
   top: -10vh;
 }
 
 .speech-bubble.landung {
   left: 20vw;
   top: 20vw;
+  z-index: 1000;
 }
 
 .speech-bubble.zitat1 {
