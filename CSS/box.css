@@ -4,9 +4,9 @@
   --bubble-corners: 0;
   --w: 14em;
   --border-size: 3px;
-  --text-color: black;
-  --bubble-color: white;
-  --border-color: white;
+  --text-color: #1f1b1a;
+  --bubble-color: #f1f1f1;
+  --border-color: #f1f1f1;
 }
 .speech-bubble {
   text-align: center;
@@ -152,7 +152,6 @@
 .speech-bubble.mondtext {
   right: 20vw;
   top: -10vh;
-
 }
 
 .speech-bubble.mondtext2 {

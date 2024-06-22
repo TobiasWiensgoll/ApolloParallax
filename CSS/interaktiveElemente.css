@@ -37,7 +37,7 @@
     left: 0;
     width: 100%;
     height: 0; /* Initial keine Höhe */
-    background-color: #ee4e36;
+    background-color: #d72910;
 }
 .externals-container {
     display: flex;
@@ -61,7 +61,7 @@
     display: block;
     width: 20px;
     height: 4px;
-    background-color: white;
+    background-color: #f1f1f1;
     margin-right: 1px; /* Abstand zwischen Linie und div */
 }
 .timer {
@@ -69,10 +69,10 @@
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background-color: black;
-    color: #e3e3e3;
+    background-color: #1f1b1a;
+    color: #f1f1f1;
     padding: 10px 20px;
-    border: 2px solid #858585;
+    /* border: 2px solid #858585; */
     border-radius: 5px;
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
