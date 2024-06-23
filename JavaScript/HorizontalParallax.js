@@ -1,3 +1,5 @@
+//Bewegt die Layern in der dritten Szene horizontal
+
 $(document).ready(function () {
   let $cont = $(".container");
   let $layer = $(".layer");

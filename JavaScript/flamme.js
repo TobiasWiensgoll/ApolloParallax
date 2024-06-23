@@ -1,3 +1,5 @@
+// Funktion um beim Start und nachdem Stopp einmal die die FlammeStart animation abzuspielen und beim Srollen nur die durchgängige Animation
+
 $(document).ready(function () {
   var lastScrollTop = 0;
   const $window = $(window);
