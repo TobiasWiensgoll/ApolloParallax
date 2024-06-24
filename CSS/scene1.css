@@ -19,13 +19,14 @@ body {
 }
 
 .menu {
+  top: -22vh;
   z-index: 99;
   overflow: hidden;
   /* cursor: grab; */
   width: 100%;
   position: relative;
   z-index: 1;
-  height: 25vh;
+  height: 40vh;
 }
 
 /* .menu.is-dragging {
@@ -43,6 +44,12 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
+  
+}
+
+.menu--item{
+  --border-color: #f1f1f1;
+  --border-size: 0px;
 }
 
 .menu--item {
@@ -55,6 +62,8 @@ body {
   height: 100%;
   padding: 0 1.5vw;
   overflow: hidden;
+  /* box-shadow: 25px 25px 15px rgba(0, 0, 0, 0.1),
+    0 0 0 var(--border-size) var(--border-color); */
 }
 
 @media (max-width: 767px) {
@@ -90,7 +99,7 @@ body {
   position: fixed;
   z-index: 1;
   top: 50%;
-  left: 50%;
+  left: 43%;
   width: 600px;
   height: auto;
   object-fit: cover;
@@ -130,8 +139,8 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  font-size: 18px;
-  /*font-weight: bold;*/
+  font-size: 16px;
+  /* font-weight: bold; */
   color: var(--text-color);
   background: var(--bubble-color);
   padding: 2vh;
@@ -144,4 +153,9 @@ body {
 
 .link{
   pointer-events: auto;
+}
+
+#button{
+  background: transparent;
+  box-shadow: 0 0;
 }
