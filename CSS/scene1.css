@@ -136,7 +136,7 @@ body {
   --border-color: white;
 }
 .speech-bubble2 {
-  display: flex;
+  display:flexbox;
   align-items: center;
   text-align: center;
   font-size: 16px;
