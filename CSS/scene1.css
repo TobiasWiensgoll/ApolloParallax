@@ -159,3 +159,47 @@ body {
   background: transparent;
   box-shadow: 0 0;
 }
+
+
+.WarningScreen {
+  /*z-index: 100;*/
+  height: 100vh;
+  width: 100vw;
+  background-color: gray;
+  opacity: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warning {
+  z-index: 180;
+  position: absolute;
+  opacity: 100;
+}
+
+@media all and (display-mode: fullscreen) {
+  .warning {
+    opacity: 0;
+  }
+  .WarningScreen {
+    opacity: 0;
+  }
+}
+
+.vollbild-container{
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  bottom: 0; /* Positioniert das Element unten */
+  left: 0; /* Positioniert das Element links */
+}
+
+.vollbildButton{
+  margin-right: 10px;
+  cursor: pointer;
+}
