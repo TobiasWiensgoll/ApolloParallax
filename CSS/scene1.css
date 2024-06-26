@@ -12,7 +12,7 @@ body {
   background-image: url(/Images/scene1.jpeg);
   background-position: center;
   background-size: cover;
-  color: #fff;
+  color: #f1f1f1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,8 +132,8 @@ body {
   --w: 18em; /*geändert*/
   --border-size: 3px;
   --text-color: black;
-  --bubble-color: white;
-  --border-color: white;
+  --bubble-color: linear-gradient(to bottom right, #FFF6D4, #fee98e);;
+  --border-color: #fee98e;
 }
 .speech-bubble2 {
   display:flexbox;
