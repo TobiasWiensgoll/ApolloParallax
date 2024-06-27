@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(/Images/scene1.jpeg);
+  background-position: center;
+  background-size: cover;
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  top: -22vh;
+  z-index: 99;
+  overflow: hidden;
+  /* cursor: grab; */
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: 40vh;
+}
+
+/* .menu.is-dragging {
+  cursor: grabbing;
+} */
+
+.menu--wrapper {
+  counter-reset: count;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.menu--item{
+  --border-color: #f1f1f1;
+  --border-size: 0px;
+}
+
+.menu--item {
+  counter-increment: count;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 30vw;
+  height: 100%;
+  padding: 0 1.5vw;
+  overflow: hidden;
+  /* box-shadow: 25px 25px 15px rgba(0, 0, 0, 0.1),
+    0 0 0 var(--border-size) var(--border-color); */
+}
+
+@media (max-width: 767px) {
+  .menu--item {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+.menu--item:nth-child(n + 10):before {
+  content: counter(count);
+}
+
+.menu--item figure {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  user-select: none;
+  -webkit-appearance: none;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  transform-origin: center;
+}
+
+.menu--item figure img {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 43%;
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+  transform: translate(-45%, -50%);
+}
+
+.menu--item figure .speech-bubble2 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  transform-origin: center;
+}
+
+@media (max-width: 767px) {
+  .version {
+    transform: scale(0.6) rotate(45deg);
+    right: -100px;
+  }
+}
+
+.speech-bubble2 {
+  --arrow-w: 0.5em;
+  --arrow-h: 1em;
+  --bubble-corners: 0;
+  --w: 18em; /*geändert*/
+  --border-size: 3px;
+  --text-color: black;
+  --bubble-color: linear-gradient(to bottom right, #FFF6D4, #fee98e);;
+  --border-color: #fee98e;
+}
+.speech-bubble2 {
+  display:flexbox;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  /* font-weight: bold; */
+  color: var(--text-color);
+  background: var(--bubble-color);
+  padding: 2vh;
+  position: relative;
+  border-radius: var(--bubble-corners);
+  max-width: var(--w);
+  box-shadow: 0 0 0 var(--border-size) var(--border-color);
+  border-radius: em;
+}
+
+.link{
+  pointer-events: auto;
+}
+
+#button{
+  background: transparent;
+  box-shadow: 0 0;
+}
+
+
+.WarningScreen {
+  /*z-index: 100;*/
+  height: 100vh;
+  width: 100vw;
+  background-color: gray;
+  opacity: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warning {
+  z-index: 180;
+  position: absolute;
+  opacity: 100;
+}
+
+@media all and (display-mode: fullscreen) {
+  .warning {
+    opacity: 0;
+  }
+  .WarningScreen {
+    opacity: 0;
+  }
+}
+
+.vollbild-container{
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  bottom: 0; /* Positioniert das Element unten */
+  left: 0; /* Positioniert das Element links */
+}
+
+.vollbildButton{
+  margin-right: 10px;
+  cursor: pointer;
+}

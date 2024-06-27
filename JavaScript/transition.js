@@ -1,3 +1,5 @@
+//Funktion um einen Übergang zwischen den den beiden Scroll Verhalten der szene1 und szene2 zu ermöglichen
+
 $(document).ready(function () {
   const $window = $(window);
   const $contentContainer = $(".ContentContainer");

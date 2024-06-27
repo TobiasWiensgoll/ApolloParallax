@@ -1,3 +1,4 @@
+//Funktion um die Navbar beim Scrollen verschwinden zu lassen und wieder auftauchen zu lassen wenn man runter scrollt
 $(document).ready(function () {
   const $body = $("body");
   let lastScroll = 0;

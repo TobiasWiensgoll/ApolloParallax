@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: "Playwrite DE Grund", cursive;
+  color:#1f1b1a;
 }
 
 body {
@@ -111,8 +115,8 @@ body {
   width: 25%;
   height: auto;
   mix-blend-mode: screen;
-  top: -200vh;
-  margin-left: -200vh;
+  top: -170vh;
+  margin-left: -190vh;
 }
 
 .satellite {
@@ -127,6 +131,9 @@ body {
   position: absolute;
   width: 14%;
   height: auto;
+}
+.mountain {
+  top: 10vh;
 }
 
 .background-9 {
