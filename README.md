@@ -17,11 +17,14 @@ Bei Meilensteine Merged Tobias die Branches in Main
 ## Roadmap
 
 --SZENE 1
---Texte
---Interaktive Elemente
---Sound Buttons
+
 
 ## Authors and acknowledgment
 
-Tobias Wiensgoll,
-Alicia Tran 
+Tobias Wiensgoll: 2.Szene, 3.Szene, Navbar, Parallax, 1.Szene, TextBubbles
+Alicia Tran: Gestaltung, Font
+Katrin Schöne: Progress Bar, Timer, Buttons
+Damian Sporin: Sound
+Martin Wyganowski: Texteanordnung, Textbeschriftung
+Mahmoud Almarie: 1.Szene, Hintergrundgestaltung
+

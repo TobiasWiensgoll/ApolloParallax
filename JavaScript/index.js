@@ -1,7 +1,8 @@
+//Zuständig fürs invertierte Scrollen
 $(window).on("scroll", function () {
   $(".ContentContainer").css("bottom", $(window).scrollTop() * -1);
 });
-
+//Parallax Funktionen
 function simpleParallax(intensity, element) {
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
@@ -26,4 +27,16 @@ function simpleParallaxSidewards(intensityX, intensityY, element) {
     element.css("transform", "translate(" + imgPosX + ", " + imgPosY + ")");
   });
 }
-
+//Funktionen werden auf die Objekte angewandt
+$(document).ready(function () {
+  simpleParallax(4, $(".baloon"));
+  simpleParallax(2, $(".airplane"));
+  simpleParallaxHorizontal(4, $(".airplane"));
+  simpleParallax(2, $(".mountain"));
+  simpleParallaxSidewards(-2, 4, $(".ShootingStar"));
+  simpleParallaxSidewards(4, 4, $(".satellite"));
+  simpleParallaxSidewards(4, 4, $(".satelit"));
+  simpleParallaxSidewards(2, 2, $(".meteor"));
+  simpleParallaxSidewards(2, 2, $(".meteor2"));
+  simpleParallaxHorizontal(4, $(".tropo"));
+});
