@@ -6,6 +6,11 @@
     <link rel="icon" type="image/png" href="/Images/mondIcon.png" />
     <title>Apollo 11: Startszene</title>
     <link rel="stylesheet" href="/CSS/scene1.css" />
+    <audio
+      id="audioLiftOff"
+      src="Sound/szene1_sound.mp3"
+      preload="auto"
+    ></audio>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   </head>
   <body>  
@@ -116,14 +121,15 @@
       <div class="WarningScreen">
         <div class="warning">Bitte in Vollbild öffnen(F11)</div>
       </div>
-      
-      
+
       <!-- Vollbild-Button-->
       <div class="vollbild-container">
         <img
           src="/Images/vollbildButton.png"
           width="50"
           heigth="52"
+          bottom="10px"
+          left="10px"
           class="vollbildButton"
         />
       </div>
@@ -131,6 +137,14 @@
     <!-- Java-Script Dateien-->
     <script src="/JavaScript/slider.js"></script>
     <script src="JavaScript/interaktiveElemente.js"></script>
+    <script>
+      // Spielt den Sound ab, sobald die Seite geladen wird
+      document.addEventListener("DOMContentLoaded", function() {
+        var audioLiftOff = document.getElementById("audioLiftOff");
+        audioLiftOff.volume = 0.3;
+        audioLiftOff.play();
+      });
+    </script>
 
   </body>
 </html>
